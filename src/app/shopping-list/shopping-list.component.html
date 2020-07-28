@@ -2,7 +2,7 @@
     <div class="col-xs-10">
         <app-shopping-list-edit 
         (ingredientToAdd) = "addIngredient($event)"
-        (ingredientToDelete) = "deleteIngredient($event)"
+        (ingredientToDelete) = "deleteIngredient(selectedIngredient)"
         [passedIngredient] = "selectedIngredient"
         ></app-shopping-list-edit>
         <hr>

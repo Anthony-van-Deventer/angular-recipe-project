@@ -12,7 +12,7 @@ export class ShoppingListEditComponent implements OnInit {
   @ViewChild('nameInput') name: ElementRef;
 
   @Output() ingredientToAdd = new EventEmitter<ingredient>();
-  @Output() ingredientToDelete = new EventEmitter<ingredient>();
+  @Output() ingredientToDelete = new EventEmitter<void>();
 
   @Input() passedIngredient: ingredient;
 
@@ -25,8 +25,8 @@ export class ShoppingListEditComponent implements OnInit {
   }
 
   addIngredient(){
-    console.log("add ingredient")
     this.ingredientToAdd.emit(new ingredient(this.name.nativeElement.value, this.amount.nativeElement.value));
+    this.clearInputs();
   }
 
   clearInputs(){
@@ -35,7 +35,7 @@ export class ShoppingListEditComponent implements OnInit {
   }
 
   deleteIngredient(){
-    this.ingredientToDelete.emit (new ingredient(this.name.nativeElement.value, this.amount.nativeElement.value));
+    this.ingredientToDelete.emit();
     this.clearInputs();
   }
 
