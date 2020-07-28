@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-project';
+  navIndicator: number = 1;
+
+  setNav(emittedNumber: number){
+    console.log("in setnav");
+    this.navIndicator = emittedNumber;
+  }
 }
