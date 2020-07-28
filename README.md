@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RecipeProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
@@ -26,7 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
 # angular-recipe-project
-Angular recipe project for udemy course
->>>>>>> a53d19ebd8b2b22a747f04c727f3cb526309e39c
+Angular recipe project for udemy course (Angular - the complete guide (2020 Edition) by Maximilian Schwarzmüller) - Really recommend it! The source control is kinda bad but using this project as training 
