@@ -8,6 +8,7 @@
                     id="name" 
                     type="text" 
                     class="form-control"
+                    value = "{{passedIngredient.name}}"
                     #nameInput>
                 </div>
                 <div class="col-sm-2 form-group">
@@ -16,14 +17,15 @@
                     id="amount" 
                     type="number" 
                     class="form-control"
+                    value = "{{passedIngredient.amount}}"
                     #amountInput>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
                     <button class="btn btn-success buttons-padding" type="submit" (click) = "addIngredient()" >Add</button>
-                    <button class="btn btn-danger buttons-padding" type="button">Delete</button>
-                    <button class="btn btn-primary" type="button">Clear</button>
+                    <button class="btn btn-danger buttons-padding" type="button" (click) = "deleteIngredient()">Delete</button>
+                    <button class="btn btn-primary" type="button" (click) = "clearInputs()">Clear</button>
                 </div>
             </div>
         </form>
