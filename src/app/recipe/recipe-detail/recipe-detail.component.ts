@@ -9,10 +9,12 @@ import { Recipe } from 'src/app/shared/recipe.model';
 export class RecipeDetailComponent implements OnInit {
 
   @Input() recipe: Recipe = null;
+  menuStatus: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

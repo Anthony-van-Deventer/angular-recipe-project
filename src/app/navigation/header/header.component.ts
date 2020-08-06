@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
   collapsed = true;
+  dropdownToggle = false;
 
   ngOnInit(): void {
   }
