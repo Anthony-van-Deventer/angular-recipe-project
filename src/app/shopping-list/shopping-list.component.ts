@@ -19,14 +19,6 @@ export class ShoppingListComponent implements OnInit {
     this.ingredients = this.shoppinglistService.getIngredients();
   }
 
-  addIngredient(ingredient: ingredient){
-    this.ingredients.push(ingredient);
-  }
-
-  deleteIngredient(ingredient: ingredient){
-    this.ingredients.splice(this.ingredients.indexOf(ingredient),1);
-  }
-
   passIngredient(ingredientToPass: ingredient){
     this.selectedIngredient = ingredientToPass;
   }
